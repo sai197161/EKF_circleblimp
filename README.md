@@ -8,13 +8,13 @@ This project aims to simulate a multi-sensor Extended Kalman Filter (EKF) for 3D
 ## Extended Kalman Filters
 ### Bayesian Estimation
 Given noisy sensor estimates up to time k, how can we ascertain the current state of the blimp at time k? 
-$$
+$
 p(state|sensor)
-$$
+$
 We use Bayes to obtain the probability distribution of states at time k
-$$
+$
 p(state|sensors) = \frac{p(sensors|state) \cdot p(state)}{[p(sensors)}
-$$
+$
 Essentially, we use the **likelihood** (probability of obtaining sensor measuremnets given current state), the **prior** (initial beliefs from the motion model) to get the **posterior** (updated beliefs). EKF's abstracts this by assuming all distributions are gaussian, allowing us to only track the state estimate (mean) and the uncertainty (covariance)
 
 ### Covariance
@@ -25,9 +25,9 @@ We use the motion model to predict the mean and covariance. Then, we use the mea
 
 ## State definition
 The filter estimates the following state vector
-$$
+$
 state = [p_x, p_y, p_z, v_x, v_y, v_z, yaw] 
-$$
+$
 
 ## Models 
 The motion model uses IMU acceleration and yaw rate with standard kinematics. Process noise is modelled using Gaussian distribution
