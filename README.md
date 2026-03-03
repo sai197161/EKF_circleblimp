@@ -10,7 +10,7 @@ This project aims to simulate a multi-sensor Extended Kalman Filter (EKF) for 3D
 Given noisy sensor estimates, how can we ascertain the current state of the blimp? 
 $p(current state at time |sensor measurements up to time k)$
 We use Bayes to obtain the probability distribution of states at time k
-$p(state|sensors) = \frac{p(sensors|state) \cdot p(state)}{[p(sensors)}$
+$$p(state|sensors) = \frac{p(sensors|state) \cdot p(state)}{[p(sensors)}$$
 Essentially, we use the **likelihood** (probability of obtaining sensor measuremnets given current state), the **prior** (initial beliefs from the motion model) to get the **posterior** (updated beliefs). EKF's abstracts this by assuming all distributions are gaussian, allowing us to only track the state estimate (mean) and the uncertainty (covariance)
 
 ### Covariance
