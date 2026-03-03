@@ -55,9 +55,10 @@ We see that incorporation of the EKF successfully reduces sensor noise and produ
 Install dependencies:
 ```bash
 pip install numpy matplotlib
+```
 
 Run:
-``` python ekf_sim.py
+``` python ekf_sim.py```
 
 ## What's Next?!
 * imu biases
