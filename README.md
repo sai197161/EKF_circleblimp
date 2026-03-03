@@ -50,11 +50,14 @@ At each time step, we:
 ## Results
 We see that incorporation of the EKF successfully reduces sensor noise and produces smoother estimates, demonstrating improved state estimation through fusion
 
-## How to run
-install dependencies:
-'''pip install numpy matplotlib'''
-run:
-'''python ekf_sim.py'''
+## How to Run
+
+Install dependencies:
+```bash
+pip install numpy matplotlib
+
+Run:
+``` python ekf_sim.py
 
 ## What's Next?!
 * imu biases
