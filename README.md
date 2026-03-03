@@ -21,7 +21,9 @@ We use the motion model to predict the mean and covariance. Then, we use the mea
 
 ## State definition
 The filter estimates the following state vector
-$$ state = [p_x, p_y, p_z, v_x, v_y, v_z, yaw] $$
+$$
+state = [p_x, p_y, p_z, v_x, v_y, v_z, yaw] 
+$$
 
 ## Models 
 The motion model uses IMU acceleration and yaw rate with standard kinematics. Process noise is modelled using Gaussian distribution
